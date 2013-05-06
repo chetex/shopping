@@ -1,0 +1,25 @@
+[LOCAL]
+
+- Tiene que estar instalado previamente "NodeJS", "MongoDB" e "npm"....
+
+  1º) Carga la base de datos con categorías y productos de prueba...
+	
+		[Ejecutar script "sql/init_shopping_ddbb.sql" una vez arrancado el mongo]
+			(copiar y pegar comandos o lanzar el script)
+			
+	2º) Ejecuta e instala el proyecto...
+		
+		git clone https://github.com/chetex/shopping shopping
+		cd shopping
+		npm install -d
+		NODE_ENV=localhost node app.js
+		
+[DEV]
+
+- La aplicación se puede ver y está funcionando en el entorno de dev..
+
+	URL : http://frozen-shelf-5242.herokuapp.com/
+
+[REPOSITORIO]
+
+	https://github.com/chetex/shopping
