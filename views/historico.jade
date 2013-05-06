@@ -1,0 +1,33 @@
+extends layout
+
+block content
+	body
+		- if(data == null) 
+			h2 No existe una lista creada anteriormente....
+			a(href='/')#create-account Crear lista
+		- else
+			fieldset(align='center')
+				form(action='/delete_list',method="post")#historic-delete-form.well.span4
+					h2 LISTA [#{name_list}]
+					input(type='hidden', value=name_list, name="name_list")#list_name
+					button(type='button')#account-form-btn1.btn Inicio
+					button(type="submit")#btn-shopping.btn.btn-primary Borrar lista
+			fieldset(align='center')
+				each item in data
+					fieldset(align='center')
+						form(action='/delete_item',method="post")#historic-delete-form-item.well.span4
+							p Producto: #{item.products}
+							p Cantidad: #{item.measure}
+							input(type='hidden', value=item._id, name="id_item")#id_item
+							input(type='hidden', value=name_list, name="name_list")#name_list
+							button(type="submit")#btn-shopping.btn.btn-primary Borrar producto
+				
+				include modals/form-errors
+				include modals/alert
+	
+	block scripts
+		script(src='/javascripts/lib/jquery.min.js')
+		script(src='/javascripts/lib/jquery.form.js')
+		script(src='/javascripts/lib/bootstrap-modal.js')
+		script(src='/javascripts/lib/bootstrap-transition.js')
+		script(src='/javascripts/historico.js')

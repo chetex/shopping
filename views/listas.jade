@@ -1,0 +1,28 @@
+extends layout
+
+block content
+	body
+		- if(obj_list == null) 
+			h2 Todavia no hay listas de la compra... ¡Elabora tu primera!
+			a(href='/')#create-account Crear lista
+		- else
+			fieldset(align='center')
+				h3 Lista de la compra disponible
+				fieldset
+					p Nombre de la lista: #{obj_list.name_list}
+					p Producto: #{obj_list.products}
+					p Cantidad: #{obj_list.measure}
+					p ----------------
+					a(href='/?register=1')#create-account Borrar lista
+					hr
+					hr
+					h3 Para poder completar esta lista o realizar el proceso de compra tienes que registrarte en el sistema...
+						a(href='/register')#create-account Registrarse
+					h3 Ir a inicio
+						a(href='/')#create-account Pagina de inicio
+	
+	block scripts
+		script(src='/javascripts/lib/jquery.min.js')
+		script(src='/javascripts/lib/jquery.form.js')
+		script(src='/javascripts/lib/bootstrap-modal.js')
+		script(src='/javascripts/lib/bootstrap-transition.js')

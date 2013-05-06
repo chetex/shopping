@@ -1,0 +1,24 @@
+{
+	"name": "shopping",
+	"version": "0.0.1",
+	"private": true,
+	"description": "Shopping app",
+	"author": {
+		"name": "Ignacio García",
+		"email": "igarciagomez@gmail.com"
+	},
+	"scripts": {
+		"start": "node app.js"
+	},
+	"dependencies": {
+		"express": "3.1.2",
+		"jade": "*",
+		"stylus": "*",
+		"mongodb": "1.2.7",
+		"moment" : "1.7.2"
+	},
+	"engines": {
+		"node": "0.10.4",
+		"npm": "1.2.18"
+	}
+}
