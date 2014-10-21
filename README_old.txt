@@ -1,39 +1,8 @@
-===================================
- INTRODUCCI�N
-===================================
-
- - Lo primero decir que el proyecto est� proceso de desarrollo. Al comprometerme con Miriam la entrega hoy Mi�rcoles, lo envio 
- con la arquitectura tal y como se encuentra a este momento. He desarrollado todo backend y parte de visualizaci�n. Espero que 
- se vea el esfuerzo de estos dos d�as y el avance en el proyecto al ver el c�digo fuente y la funcionalidad en local.
- 
- - Anteriormente hab�a desarrollado un proyecto con NodeJS (+express) pero era un servidor de petici�n-respuesta,
- en la que al recibir una llamada (GET o POST) devolvia un objeto JSON a la vista para que la pintara. Muchos proyecto que 
- hab�a realizado eran con PHP y MYSQL y el servidor Amazon S3, pero para este quer�a un reto y aprender cosas nuevas.
- 
- - Me result� interesante todo el proyecto de NodeJS y pensando que me ser�a m�s r�pido desarrollar la aplicaci�n 
- en una tecnolog�a que est� de moda hoy en d�a, pero sin darme cuenta de la complejidad que tiene interna, cuando ya
- empiezas a querer usar patrones y modelos estandares para los proyectos.
- 
- - Siempre hab�a utilizado MySql o SQLServer, y utilizar Postgress ya que nunca lo hab�a utilizado y hab�a leido que
- el sistema de archivos que realizaba era m�s eficiente y escalaba muy bien.
- 
- - El hacer el deploy a Heroku, teniendo el proyecto con NodeJS es facil y r�pido, y al estar integrado con Postgresql
- da muchas facilidades para su deploy.
-
- - As� que asum� el proyecto como un reto para montarlo en una nueva tecnolog�a que tiene mucha auge, pero con las dificultades
- que se pod�an esperar a la hora de afrontarlo.
- 
-  - Quizas antes de realizar el proyecto fu� investigando cada una de las tecnolog�as y se fu� echando el tiempo encima. El google
-  maps api, ya ten�a investigado los m�todos para gestionar el evento en el que un usuario a�ade un punto en el mapa y as�
-  guardarlo en base de datos. Pero el rato de investigaci�n de eso al final no fue en avance visual del proyecto y se ha quedado
-  en un "TODO" para el proyecto.
 
 ===================================
  ORGANIZACION DEL PROYECTO
 ===================================
 
- - El proyecto fue realizado durante dos d�as y medio. Del Lunes por la ma�ana al mi�rcoles a mediod�a.
- - El horario aproximado fue como el horario de oficina durante todo el d�a.
  - Durante ese periodo no solo fue dedicado al proyecto, sino a la investigaci�n de Heroku, google maps api,
  Git, y parte de NodeJs que no conoc�a. Por ello el proyecto se ha quedado en proceso por la falta de tiempo.
  
